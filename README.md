@@ -1,3 +1,3 @@
 # GuLiShangCheng````
-谷粒商城  好好学技术 天天向上
-java jdk 哈哈
+谷粒商城  
+guli-user端口号8080
