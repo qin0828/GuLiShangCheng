@@ -1,10 +1,13 @@
 package com.qin.guli.user.controller;
 
+import com.qin.guli.user.bean.Umsmember;
 import com.qin.guli.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+import java.util.List;
 
 /**
  * @Title:com.qin.guli.user.controller
@@ -19,9 +22,17 @@ public class UserController {
     @Autowired
     UserService userService;
 
+    @RequestMapping("getAllUser")
+    @ResponseBody
+    public List<Umsmember> getAllUser(){
+        List<Umsmember> umsMembers=userService.getAllUser();
+        return umsMembers;
+    }
+
+
     @RequestMapping("index")
     @ResponseBody
-    private String index(){
+    public String index(){
         return "hello user";
     }
 }

@@ -1,5 +1,9 @@
 package com.qin.guli.user.service;
 
+import com.qin.guli.user.bean.Umsmember;
+
+import java.util.List;
+
 /**
  * @Title:com.qin.guli.user.service
  * @Description:
@@ -8,4 +12,5 @@ package com.qin.guli.user.service;
  * @Version:1.0
  */
 public interface UserService {
+    List<Umsmember> getAllUser();
 }

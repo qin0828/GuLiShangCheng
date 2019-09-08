@@ -1,9 +1,12 @@
 package com.qin.guli.user.service.impl;
 
+import com.qin.guli.user.bean.Umsmember;
 import com.qin.guli.user.mapper.UserMapper;
 import com.qin.guli.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
  * @Title:com.qin.guli.user.service.impl
@@ -17,4 +20,11 @@ public class UserServiceImpl implements UserService {
 
     @Autowired
     UserMapper userMapper;
+
+
+    @Override
+    public List<Umsmember> getAllUser() {
+        List<Umsmember> umsmemberList = userMapper.selectAllUser();
+        return null;
+    }
 }
