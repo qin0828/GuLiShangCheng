@@ -1,6 +1,6 @@
 package com.qin.guli.user.service.impl;
 
-import com.qin.guli.user.bean.Umsmember;
+import com.qin.guli.user.bean.UmsMember;
 import com.qin.guli.user.mapper.UserMapper;
 import com.qin.guli.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,8 +23,10 @@ public class UserServiceImpl implements UserService {
 
 
     @Override
-    public List<Umsmember> getAllUser() {
-        List<Umsmember> umsmemberList = userMapper.selectAllUser();
-        return null;
+    public List<UmsMember> getAllUser() {
+       // List<UmsMember> umsMemberList = userMapper.selectAllUser();
+        //使用tk.mapper提供的查询方法
+        List<UmsMember> umsMemberList = userMapper.selectAll();
+        return umsMemberList;
     }
 }

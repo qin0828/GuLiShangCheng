@@ -1,6 +1,7 @@
 package com.qin.guli.user.mapper;
 
-import com.qin.guli.user.bean.Umsmember;
+import com.qin.guli.user.bean.UmsMember;
+import tk.mybatis.mapper.common.Mapper;
 
 import java.util.List;
 
@@ -11,8 +12,9 @@ import java.util.List;
  * @Date:2019/9/722:53
  * @Version:1.0
  */
-public interface UserMapper {
+//继承Mapper 使用通用的增删改查
+public interface UserMapper extends Mapper<UmsMember> {
 
-    List<Umsmember> selectAllUser();
+    List<UmsMember> selectAllUser();
 
 }
