@@ -1,7 +1,8 @@
 package com.qin.guli.user.controller;
 
-import com.qin.guli.user.bean.UmsMember;
-import com.qin.guli.user.service.UserService;
+import com.qin.guli.bean.UmsMember;
+import com.qin.guli.bean.UmsMemberReceiveAddress;
+import com.qin.guli.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,6 +22,16 @@ public class UserController {
 
     @Autowired
     UserService userService;
+
+    @RequestMapping("getUmsMemberReceiveAddressByMemberId")
+    @ResponseBody
+    public List<UmsMemberReceiveAddress> getUmsMemberReceiveAddressByMemberId(String memberId){
+
+        List<UmsMemberReceiveAddress> umsMemberReceiveAddressList=userService.getUmsMemberReceiveAddressByMemberId(memberId);
+
+        return umsMemberReceiveAddressList;
+    }
+
 
     @RequestMapping("getAllUser")
     @ResponseBody

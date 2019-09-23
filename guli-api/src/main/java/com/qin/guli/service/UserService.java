@@ -1,7 +1,7 @@
-package com.qin.guli.user.service;
+package com.qin.guli.service;
 
-import com.qin.guli.user.bean.UmsMember;
-import com.qin.guli.user.bean.UmsMember;
+import com.qin.guli.bean.UmsMember;
+import com.qin.guli.bean.UmsMemberReceiveAddress;
 
 import java.util.List;
 
@@ -14,4 +14,6 @@ import java.util.List;
  */
 public interface UserService {
     List<UmsMember> getAllUser();
+
+    List<UmsMemberReceiveAddress> getUmsMemberReceiveAddressByMemberId(String memberId);
 }

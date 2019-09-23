@@ -1,4 +1,4 @@
-package com.qin.guli.user.bean;
+package com.qin.guli.bean;
 
 /**
  * @Title:com.qin.guli.user.bean
@@ -7,7 +7,7 @@ package com.qin.guli.user.bean;
  * @Date:2019/9/822:42
  * @Version:1.0
  */
-public class umsMemberReceiveAddress {
+public class UmsMemberReceiveAddress {
 
     private String id;
     private String memberId;

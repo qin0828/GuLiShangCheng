@@ -1,6 +1,6 @@
 package com.qin.guli.user.mapper;
 
-import com.qin.guli.user.bean.UmsMember;
+import com.qin.guli.bean.UmsMember;
 import tk.mybatis.mapper.common.Mapper;
 
 import java.util.List;

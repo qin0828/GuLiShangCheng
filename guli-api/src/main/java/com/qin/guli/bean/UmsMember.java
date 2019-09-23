@@ -1,4 +1,4 @@
-package com.qin.guli.user.bean;
+package com.qin.guli.bean;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
