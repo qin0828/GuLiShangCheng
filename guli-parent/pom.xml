@@ -11,8 +11,8 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>com.atguigu.gmall</groupId>
-    <artifactId>gmall-parent</artifactId>
+    <groupId>com.qin.guli</groupId>
+    <artifactId>guli-parent</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
